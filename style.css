@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+.sofia-sans-body {
+  font-family: "Sofia Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+/* - all body - */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------- Navbar section style ------------- */
+
+/* --- Navbar container style --- */
+
+.main_nav_container{
+  max-width: 1520px;
+  margin: 0 auto;
+  display: flex;
+  background: rgb(30, 13, 53);
+  justify-content: space-evenly;
+}
+
+/* --- nav-ber list items --- */
+.nav_img{
+  margin-top: 30px ;
+  margin-bottom: 30px;
+  height: 30px;
+  width: 200px;
+  border: 1px solid rgb(37, 16, 65); ;
+}
+.Main_list{
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.Main_list li{
+  list-style-type: none;
+}
+.Main_list li a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/* --- hover li --- */
+.Main_list li a:hover{
+  color: blue;
+  transition: all 0.3s linear;
+}
+/* --- button style --- */
+.primary_btn{
+  color: #ffffff;
+  background:linear-gradient(45deg,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+  padding: 13px 16px 13px 16px;
+  border-radius: 10px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.primary_btn a{
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px white;
+}
+/* --- button hover --- */
+.primary_btn:hover{
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
+}
+/* --- Hero-banner style --- */
+.hero_banner{
+  background-image: url(assets/hero-bg.png);
+  background-position: center;
+  max-width: 1520px;  
+  height: 720px;
+  margin: 0 auto;
+}
+/* ------------ Hero-body style ------------ */
+
+.Hero_head{
+  padding-top:100px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.micro{
+  position: absolute;
+  top: 190px;
+}
+
+.Hero_body{
+  margin:10px 0 10px;
+  
+}
+.Hero_img{
+  height:350px;
+  width:350px ;
+}
+.Hero_body h1,p{
+color: #ffffff;
+}
+.Hero_body h1{
+  font-weight: 800;
+  font-size: 3.75rem;
+  text-shadow: 2px 2px 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.Hero_body p{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height:15px;
+  color: #ffffff7a;
+}
+/* --- Hero button --- */
+.Hero_btn1 a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.Hero_btn1{
+  background: linear-gradient(45deg,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+  padding: 12px 24px ;
+  border-radius: 15px;
+  border: qpx solid wheat;
+}
+/* --- button 1 hover --- */
+.Hero_btn1:hover, a:hover{
+  color: black;
+  transform: scale(1.1);
+  transition: all 0.4s ease-out;
+}
+.Hero_btn2 a{
+   text-decoration: none;
+   text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  color:rgb(56, 185, 56) ;
+}
+.Hero_btn2{
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 15px;
+  border: 2px solid rgb(51, 182, 51);
+  background-color: transparent;
+}
+/* button --- 2 --- hover  */
+.Hero_btn2:hover{
+   color: black;
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+.display_flex{
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ------- challenge part ------ */
+.challange{
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1A0B2E;
+  background-color: #00FF88;
+  position: absolute;
+  top: 130px;
+  right: 600px;
+  border: none;
+}
+
