@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
 
 .sofia-sans-body {
   font-family: "Sofia Sans", sans-serif;
@@ -7,54 +7,59 @@
   font-style: normal;
 }
 /* - all body - */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* ------------- Navbar section style ------------- */
 
 /* --- Navbar container style --- */
 
-.main_nav_container{
+.main_nav_container {
   max-width: 1520px;
   margin: 0 auto;
   display: flex;
   background: rgb(30, 13, 53);
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /* --- nav-ber list items --- */
-.nav_img{
-  margin-top: 30px ;
+.nav_img {
+  margin-top: 30px;
   margin-bottom: 30px;
   height: 30px;
-  width: 200px;
-  border: 1px solid rgb(37, 16, 65); ;
+  max-width: 200px;
+  border: 1px solid rgb(37, 16, 65);
 }
-.Main_list{
+.Main_list {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 40px;
 }
-.Main_list li{
+.Main_list li {
   list-style-type: none;
 }
-.Main_list li a{
+.Main_list li a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.2rem;
   font-weight: 500;
 }
 /* --- hover li --- */
-.Main_list li a:hover{
+.Main_list li a:hover {
   color: blue;
   transition: all 0.3s linear;
 }
 /* --- button style --- */
-.primary_btn{
+.primary_btn {
   color: #ffffff;
-  background:linear-gradient(45deg,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+  background: linear-gradient(
+    45deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
   padding: 13px 16px 13px 16px;
   border-radius: 10px;
   height: 45px;
@@ -62,96 +67,101 @@
   align-items: center;
   font-size: 1rem;
   font-weight: 600px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  text-align: center;
+  margin: 24px 0 24px 0;
 }
-.primary_btn a{
+.primary_btn a {
   color: #ffffff;
   text-decoration: none;
   text-shadow: 1px 1px 3px white;
 }
 /* --- button hover --- */
-.primary_btn:hover{
+.primary_btn:hover {
   transition: all 0.4s ease-in-out;
   transform: scale(1.1);
 }
 /* --- Hero-banner style --- */
-.hero_banner{
+.hero_banner {
   background-image: url(assets/hero-bg.png);
   background-position: center;
-  max-width: 1520px;  
+  max-width: 1520px;
   height: 720px;
   margin: 0 auto;
 }
 /* ------------ Hero-body style ------------ */
 
-.Hero_head{
-  padding-top:100px ;
+.Hero_head {
+  padding-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
 }
+/* mic position  */
 
-.micro{
+.micro {
   position: absolute;
   top: 190px;
 }
 
-.Hero_body{
-  margin:10px 0 10px;
-  
+.Hero_body {
+  margin: 10px 0 10px;
 }
-.Hero_img{
-  height:350px;
-  width:350px ;
+.Hero_img {
+  max-height: 350px;
+  max-width: 350px;
 }
-.Hero_body h1,p{
-color: #ffffff;
+.Hero_body h1,
+p {
+  color: #ffffff;
 }
-.Hero_body h1{
+.Hero_body h1 {
   font-weight: 800;
   font-size: 3.75rem;
   text-shadow: 2px 2px 20px;
   text-align: center;
   margin-bottom: 12px;
 }
-.Hero_body p{
+.Hero_body p {
   font-weight: 400;
   font-size: 1rem;
-  line-height:15px;
+  line-height: 15px;
   color: #ffffff7a;
 }
 /* --- Hero button --- */
-.Hero_btn1 a{
+.Hero_btn1 a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
   font-size: 1rem;
   text-transform: capitalize;
 }
-.Hero_btn1{
-  background: linear-gradient(45deg,rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
-  padding: 12px 24px ;
+.Hero_btn1 {
+  background: linear-gradient(
+    45deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  padding: 12px 24px;
   border-radius: 15px;
   border: qpx solid wheat;
 }
 /* --- button 1 hover --- */
-.Hero_btn1:hover, a:hover{
+.Hero_btn1:hover,
+a:hover {
   color: black;
   transform: scale(1.1);
   transition: all 0.4s ease-out;
 }
-.Hero_btn2 a{
-   text-decoration: none;
-   text-transform: capitalize;
+.Hero_btn2 a {
+  text-decoration: none;
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 1rem;
-  color:rgb(56, 185, 56) ;
+  color: rgb(56, 185, 56);
 }
-.Hero_btn2{
+.Hero_btn2 {
   font-size: 1rem;
   font-weight: 600;
   padding: 12px 20px;
@@ -160,12 +170,12 @@ color: #ffffff;
   background-color: transparent;
 }
 /* button --- 2 --- hover  */
-.Hero_btn2:hover{
-   color: black;
+.Hero_btn2:hover {
+  color: black;
   transform: scale(1.1);
   transition: all 0.4s ease;
 }
-.display_flex{
+.display_flex {
   margin-top: 24px;
   display: flex;
   justify-content: center;
@@ -174,16 +184,115 @@ color: #ffffff;
 }
 
 /* ------- challenge part ------ */
-.challange{
+.challange {
   padding: 8px 16px;
   border-radius: 25px;
   font-size: 18px;
   font-weight: 600;
-  color: #1A0B2E;
-  background-color: #00FF88;
+  color: #1a0b2e;
+  background-color: #00ff88;
   position: absolute;
   top: 130px;
   right: 600px;
   border: none;
+  cursor: pointer;
+}
+.challange:hover {
+  transform: scale(1.1);
+  transition: all 0.3s linear;
+}
+/* -------- pod_cast section ------- */
+
+.pod_cast {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: rgb(30, 13, 53);
+}
+.pod {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pod_cast h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: bold;
+  color: white;
+  text-shadow: 1px 1px 3px white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.pod_head p {
+  color: #ffffff69;
+  text-align: center;
+}
+.line {
+  border-bottom: 2px solid wheat;
+  height: 0;
+  max-width: 1200px;
 }
 
+/* line  */
+.line {
+  width: 80%;
+  height: 1%;
+  margin: 20px auto;
+}
+/* ---- card style ----  */
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-top: 60px;
+}
+.card {
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(34, 16, 58);
+  padding: 10px;
+  border-radius: 15px;
+}
+.card h3 {
+  color: #00ff88;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.card p {
+  color: rgba(255, 255, 255, 0.507);
+}
+.hamburger_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+/* ------------- Media Qurey - mobile responsive  --------------- */
+
+@media screen and (max-width:576px) {
+  .hamburger_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .primary_btn,
+  .Main_list {
+    display: none;
+  }
+  .card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
