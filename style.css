@@ -295,4 +295,11 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .Hero_body p{
+    text-align: center;
+  }
+  .display_flex{
+    display: flex;
+    flex-direction: column;
+  }
 }
