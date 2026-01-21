@@ -217,6 +217,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 60px 10px 0 10px;
 }
 .pod_cast h1 {
   font-size: 3rem;
@@ -451,7 +452,7 @@ a:hover {
 
 /* ---------- section-4 ---------- */
 
-.The_host{
+.The_host {
   max-width: 1520px;
   margin: 0 auto;
   padding: 100px;
@@ -462,25 +463,24 @@ a:hover {
   align-items: center;
   flex-direction: column;
   background-color: #1a0b2e;
-  
 }
-.The_host h2{
+.The_host h2 {
   margin-bottom: 20px;
   color: #ffffff;
 }
-.The_host p{
+.The_host p {
   color: #ffffff96;
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
 }
-.The_host h1{
+.The_host h1 {
   font-size: 3rem;
   color: #ffffff;
   font-weight: 700;
   font-style: bold;
 }
-.host_container{
+.host_container {
   background-color: rgba(83, 60, 114, 1);
   display: flex;
   justify-content: center;
@@ -493,13 +493,13 @@ a:hover {
   border-radius: 40px;
 }
 
-.link{
+.link {
   display: flex;
   align-items: center;
   justify-content: left;
   gap: 10px;
 }
-.linkedin{
+.linkedin {
   margin-top: 20px;
   width: 40px;
   height: 40px;
@@ -507,21 +507,61 @@ a:hover {
   padding: 8px;
   text-align: center;
   border: 2px solid rgb(155, 12, 155);
-  
 }
 /* hover for host  */
-.host_container img:hover{
+.host_container img:hover {
   transform: scale(1.1);
   transition: all 0.4s ease;
 }
-.linkedin:hover{
+.linkedin:hover {
   transform: scale(1.1);
   transition: all 0.3s ease;
-  background-color: aliceblue;
+  background-color: rgb(24, 24, 24);
 }
-.host_container:hover{
+.host_container:hover {
   background-color: rgb(65, 40, 98);
   transition: all 0.3s ease;
+}
+
+/* --------- footer section ---------  */
+
+.footer_img {
+  background-image: url(assets/footer-bg.png);
+  background-position: center;
+  max-width: 1520px;
+  margin: 0 auto;
+  height: 50%px;
+}
+.link_font {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: medium;
+  color: #ffffff88;
+}
+.foot_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.foot_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+.foot_link {
+  padding-top: 32px;
+}
+.foot_link p:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #00ff88;
+}
+.foot_war {
+  padding: 30px;
 }
 
 /* ------------- Media section- mobile responsive  --------------- */
@@ -550,44 +590,65 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
-  .Tech_body { 
+  .Tech_body {
     display: flex;
     flex-direction: column;
     margin: 20px;
 
     /* display: grid;
-    grid-template-columns: repeat(1,1fr); */ 
+    grid-template-columns: repeat(1,1fr); */
     /* ----- if you want use grid ,yes you can be use it easily ------ */
   }
-  .Tech_head h1{
+  .Tech_head h1 {
     text-align: center;
   }
-  .pod_head h1{
+  .pod_head h1 {
     text-align: center;
     line-height: 15px;
   }
-  .fretured_card{
+  .fretured_card {
     display: flex;
     flex-direction: column;
   }
-  .host_container{
+  .host_container {
     display: flex;
     flex-direction: column;
   }
-  .The_host h1{
+  .The_host h1 {
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
+  }
+  .pod_head h1 {
+    line-height: 50px;
+  }
+  .pod_head {
+    padding: 0 10px 0 10px;
+  }
+  .foot_war {
+    text-align: center;
+  }
+  .foot_link {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .foot_war {
+    padding-bottom: 30px;
+    text-align: center;
   }
 }
 /* ------------ for tablet / like medium device --------------- */
 
-@media screen and (min-width:577px) and (max-width:900px) {
-  .Tech_body{
+@media screen and (min-width: 577px) and (max-width: 900px) {
+  .Tech_body {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 300px);
   }
-  .card_container{
+  .card_container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fretured_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
