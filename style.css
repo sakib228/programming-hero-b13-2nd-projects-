@@ -97,11 +97,27 @@
   flex-direction: column;
   position: relative;
 }
+.middle_hero {
+  position: relative;
+}
 /* mic position  */
 
 .micro {
   position: absolute;
-  top: 190px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: micro_rotate 1s linear infinite;
+}
+
+@keyframes micro_rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .Hero_body {
@@ -184,6 +200,7 @@ a:hover {
 }
 
 /* ------- challenge part ------ */
+
 .challange {
   padding: 8px 16px;
   border-radius: 25px;
@@ -192,8 +209,8 @@ a:hover {
   color: #1a0b2e;
   background-color: #00ff88;
   position: absolute;
-  top: 130px;
-  right: 600px;
+  top: 25px;
+  right: 25px;
   border: none;
   cursor: pointer;
 }
@@ -550,6 +567,9 @@ a:hover {
   align-items: center;
   flex-direction: column;
   padding: 100px;
+}
+.foot_container img {
+  width: 100%;
 }
 .foot_link {
   padding-top: 32px;
