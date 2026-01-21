@@ -248,7 +248,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 80px;
-  margin-top: 60px;
+  margin: 60px 0 100px 0;
 }
 .card {
   max-width: 200px;
@@ -276,9 +276,181 @@ a:hover {
   display: none;
 }
 
-/* ------------- Media Qurey - mobile responsive  --------------- */
+/* --------- section 2 ---------- */
+.Tech_wave {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: rgb(39, 14, 72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Tech_wave .Tech_head h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-style: bold;
+  font-weight: 700;
+  margin: 120px 0 40px 0;
+}
+/* card_style for TechWave  */
+.Tech_body .Tech_card {
+  /* max-width: 380px; */
+  background-color: rgb(53, 17, 101);
+  padding: 40px;
+  border-radius: 30px;
 
-@media screen and (max-width:576px) {
+  /* text-align: center; if you want to place center */
+}
+.Tech_card h1 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: bold;
+  margin: 16px 0 16px 0;
+}
+.Tech_card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff7e;
+}
+.Tech_card:hover {
+  background-color: rgba(38, 38, 144, 0.77);
+  transition: all 0.4s ease;
+  /* box-shadow: 0 8px 25px rgba(88, 28, 135, 0.35); */
+  box-shadow: 0 10px 30px rgba(76, 29, 149, 0.4);
+}
+.Tech_body {
+  max-width: 1200px;
+  margin: 10px auto;
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 120px;
+}
+
+/* LEFT BIG CARD */
+.lay_1 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+/* RIGHT SIDE CARDS */
+.lay_2 {
+  grid-column: span 2;
+}
+
+.lay_3 {
+  grid-column: span 2;
+}
+
+.lay_4 {
+  grid-column: span 2;
+}
+
+.lay_5 {
+  grid-column: span 1;
+}
+
+/* ---------- section ------------ 3  */
+
+.Featured {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #1a0b2e;
+}
+.fretured_card {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.container {
+  text-align: center;
+}
+.Featured_1 {
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.fretured_card ._f_card {
+  max-width: 340px;
+  max-height: 500px;
+  margin: 10px;
+  background-color: #2f164e;
+  text-align: center;
+  border-radius: 24px;
+  padding: 10px;
+}
+.card_image {
+  height: 250px;
+  background-color: #111212;
+  margin-bottom: 10px;
+  background-size: cover;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_image a {
+  font-size: 20px;
+  color: #ffffff;
+  background: linear-gradient(
+    45deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.car1 {
+  background-image: url(assets/image1.png);
+}
+.car2 {
+  background-image: url(assets/image2.png);
+}
+.car3 {
+  background-image: url(assets/image3.png);
+}
+._f_card h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+._f_card p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  padding: 12px;
+}
+
+.green {
+  color: #00ff88;
+  text-align: left;
+}
+
+/* card hover  */
+._f_card:hover {
+  background-color: #1a0b2e;
+  box-shadow: 0 8px 25px rgba(88, 28, 135, 0.35);
+  transition: all 0.4s linear;
+}
+
+/* ------------- Media section- mobile responsive  --------------- */
+
+@media screen and (max-width: 576px) {
   .hamburger_logo {
     display: flex;
     justify-content: center;
@@ -295,11 +467,43 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .Hero_body p{
+  .Hero_body p {
     text-align: center;
   }
-  .display_flex{
+  .display_flex {
     display: flex;
     flex-direction: column;
+  }
+  .Tech_body { 
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr); */ 
+    /* ----- if you want use grid ,yes you can be use it easily ------ */
+  }
+  .Tech_head h1{
+    text-align: center;
+  }
+  .pod_head h1{
+    text-align: center;
+    line-height: 15px;
+  }
+  .fretured_card{
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ------------ for tablet / like medium device --------------- */
+
+@media screen and (min-width:577px) and (max-width:900px) {
+  .Tech_body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .card_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
 }
